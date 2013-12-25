@@ -65,7 +65,7 @@ class Controller():
         self.open_time = time.time()
         self.msg_sent = False
         self.config = config
-        self.doors = [Door(n,c) for (n,c) in config['doors'].items()]
+        self.doors = [Door(n, c) for (n, c) in config['doors'].items()]
         self.updateHandler = UpdateHandler(self)
         for door in self.doors:
             door.last_state = 'unknown'

@@ -212,5 +212,3 @@ if __name__ == '__main__':
     controller = Controller(json.load(config_file))
     config_file.close()
     controller.run()
-
-

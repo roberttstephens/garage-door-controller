@@ -1,3 +1,5 @@
+"""Software to monitor and control garage doors via a raspberry pi."""
+
 import time, syslog, json
 import RPi.GPIO as gpio
 

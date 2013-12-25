@@ -163,7 +163,7 @@ class UpdateHandler(Resource):
             updates = self.controller.get_updates(request.lastupdate)
             if updates != []:
                 self.send_updates(request, updates)
-                self.delayed_requests.remove(request);
+                self.delayed_requests.remove(request)
 
     def format_updates(self, request, update):
         response = json.dumps({'timestamp': int(time.time()), 'update':update})

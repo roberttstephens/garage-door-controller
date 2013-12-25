@@ -57,7 +57,7 @@ class Door(object):
         time.sleep(0.2)
         gpio.output(self.relay_pin, True)
 
-class Controller():
+class Controller(object):
     def __init__(self, config):
         gpio.setwarnings(False)
         gpio.cleanup()
